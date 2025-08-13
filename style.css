@@ -1,0 +1,284 @@
+/* Paleta de Colores Violeta y Estilos Personalizados */
+:root, 
+[data-bs-theme="dark"] {
+    --bs-primary: #7F5AF0;
+    --bs-primary-rgb: 127, 90, 240;
+    --bs-secondary: #ff0f7b;
+    --bs-body-bg: #16161A;
+    --bs-body-color: white;
+    --bs-border-color: #42424a;
+    --gda-card-bg: #242629;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px; 
+    transition: background-color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .btn, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-transparent {
+    background-color: rgba(var(--bs-body-bg-rgb), 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.logo-img {
+    height: 35px;
+    margin-right: 12px;
+}
+
+/* --- NUEVO FONDO HERO CON IMAGEN --- */
+.hero-section {
+    color: white;
+    padding: 120px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+    /* Imagen de fondo */
+    background-image: url('../images/bg_img_opti.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Capa oscura sobre la imagen para mejorar legibilidad */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Efectos neon para los textos de la hero */
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 
+        0 0 10px rgba(127, 90, 240, 0.8),
+        0 0 20px rgba(127, 90, 240, 0.6),
+        0 0 30px rgba(127, 90, 240, 0.4),
+        0 0 40px rgba(127, 90, 240, 0.2);
+    animation: neonPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+    from {
+        text-shadow: 
+            0 0 10px rgba(127, 90, 240, 0.8),
+            0 0 20px rgba(127, 90, 240, 0.6),
+            0 0 30px rgba(127, 90, 240, 0.4),
+            0 0 40px rgba(127, 90, 240, 0.2);
+    }
+    to {
+        text-shadow: 
+            0 0 5px rgba(127, 90, 240, 1),
+            0 0 15px rgba(127, 90, 240, 0.8),
+            0 0 25px rgba(127, 90, 240, 0.6),
+            0 0 35px rgba(127, 90, 240, 0.4);
+    }
+}
+
+/* NUEVA CLASE PARA TEXTO VIOLETA CON GLOW */
+.text-violet-glow {
+    color: #E6D9FF;
+}
+
+.highlight-orange {
+    color: #ff74b3;
+    text-shadow: 
+        0 0 10px rgba(255, 107, 53, 0.8),
+        0 0 20px rgba(255, 107, 53, 0.6),
+        0 0 30px rgba(255, 107, 53, 0.4);
+}
+/* --- FIN NUEVO FONDO HERO --- */
+
+
+.hero-section .subtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.cta-button {
+    background-color: var(--bs-secondary);
+    color: white;
+    font-weight: 700;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+}
+
+.cta-button:hover {
+    background-color: color-mix(in srgb, var(--bs-secondary), black 15%);
+    transform: translateY(-3px);
+    color: white;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.section-subtitle {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+[data-bs-theme="dark"] .section-subtitle { color: var(--bs-body-color); }
+
+.card {
+    background-color: var(--gda-card-bg);
+    border: 1px solid var(--bs-border-color, #dee2e6);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border-color 0.3s;
+    height: 100%;
+}
+[data-bs-theme="dark"] .card { border-color: var(--bs-border-color); }
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(127, 90, 240, 0.2);
+}
+
+.card-icon {
+    color: var(--bs-primary);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Colores pastel para los iconos */
+.bi-rocket-takeoff { color: #fd8e99; } /* Rosa pastel */
+.bi-bug { color: #8afda3; } /* Verde pastel */
+.bi-signpost-split { color: #8bcdff; } /* Azul pastel */
+.bi-emoji-angry { color: #fcfc8a; } /* Amarillo pastel */
+.bi-map { color: #f8c386; } /* Naranja pastel */
+.bi-people { color: #ed8ef8; } /* Lila pastel */
+.bi-webcam { color: #93ffd8; } /* Verde menta pastel */
+.bi-journal-code { color: #8fa5ff; } /* Lavanda pastel */
+.bi-person { color: #fc8dd7; } /* Rosa claro pastel */
+
+/* Estilos para la sección pain points con fondo plano oscuro */
+.pain-points-section {
+    background-color: #111113;
+    position: relative;
+}
+
+.pain-points-section::before {
+    display: none;
+}
+
+.pain-points-section .section-title {
+    color: #ff0f7b;
+}
+
+.pain-points-section .card {
+    background-color: #1A1A1F;
+    border-color: #2A2A35;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.pain-points-section .card:hover {
+    box-shadow: 0 8px 30px rgba(127, 90, 240, 0.2);
+}
+
+.feature-card .card-title {
+    font-weight: 700;
+    color: #69def5;
+}
+
+/* Estilos para la sección solution con fondo plano oscuro */
+.solution-section {
+    background-color: #111113;
+}
+
+.solution-section .section-title {
+    color: #ff0f7b;
+}
+
+/* Estilos para la sección redes con fondo plano oscuro */
+.social-section {
+    background-color: #111113;
+    padding: 60px 0;
+}
+.social-icon {
+    font-size: 2rem;
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+.social-icon:hover {
+    color: var(--bs-primary);
+    transform: scale(1.2);
+}
+
+/* Estilos para el footer con fondo plano oscuro */
+.footer {
+    background-color: #111113;
+    color: #94A1B2;
+}
+
+/* Estilos para la sección CTA con fondo violeta oscuro */
+.final-cta-section {
+    background: linear-gradient(135deg, #2D1B69 0%, #1A0D3B 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.final-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(127, 90, 240, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(44, 182, 125, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.final-cta-section .section-title,
+.final-cta-section .section-subtitle {
+    color: #ff0f7b;
+}
+
+.final-cta-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.final-cta-section .small-text {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Estilos para la sección personal-story con fondo plano oscuro */
+.personal-story-section {
+    background-color: #111113;
+}
+
+/* Estilos para la sección testimonial con fondo plano oscuro */
+.testimonials-section {
+    background-color: #111113;
+}

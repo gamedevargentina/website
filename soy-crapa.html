@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quién soy - Gamedev Argentina</title>
+
+    <meta name="description" content="Conoce a Alejandro, el creador de Gamedev Argentina. Aprende sobre su historia de cómo descubrió el desarrollo de videojuegos y su pasión por enseñar.">
+    <meta name="keywords" content="quién soy, sobre mí, historia, Alejandro, Gamedev Argentina, mentoría, desarrollo de videojuegos">
+    <meta name="author" content="Gamedev Argentina">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gamedevargentina.com/quien-soy">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Quién soy - Gamedev Argentina">
+    <meta property="og:description" content="Conoce a Alejandro, el creador de Gamedev Argentina. Aprende sobre su historia de cómo descubrió el desarrollo de videojuegos y su pasión por enseñar.">
+    <meta property="og:url" content="https://gamedevargentina.com/quien-soy">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo-gda-150px.png">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quién soy - Gamedev Argentina">
+    <meta name="twitter:description" content="Conoce a Alejandro, el creador de Gamedev Argentina. Aprende sobre su historia de cómo descubrió el desarrollo de videojuegos y su pasión por enseñar.">
+    <meta name="twitter:image" content="images/logo-gda-150px.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Mi Hoja de Estilos Personalizada -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Estilos inline para sobrescribir hero-section solo en esta página -->
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #2D1B69 0%, #1A0D3B 100%);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 60vh;
+            padding: 80px 0;
+        }
+
+        .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(127, 90, 240, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(44, 182, 125, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-body">
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="images/logo-gda-150px.png" alt="Logo Gamedev Argentina" class="logo-img d-inline-block align-text-top">
+                Gamedev Argentina
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hola</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="soy-crapa.html">Soy Crapa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+        <div class="container position-relative" style="z-index: 2;">
+            <h1 class="display-4 fw-bold mb-4">Hola, soy <span class="highlight-orange">Crapa</span></h1>
+            <div class="text-center mb-4">
+                <img src="images/ale-redondo-desenfoque-hd-512px-300x300.png" alt="Alejandro, creador de Gamedev Argentina" class="img-fluid rounded-circle shadow-sm" style="width: 200px; height: 200px; object-fit: cover;">
+            </div>
+            <p class="subtitle mb-5">dejame contarte por qué quiero ser tu mentor</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- PERSONAL STORY SECTION -->
+        <section class="personal-story-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Mi nombre real es Alejandro, y esta es la historia de cómo un chico de escuela pública en Argentina descubrió que los videojuegos no solo se juegan… se crean.</p>
+                        <p>Fue en la primaria. Un aula con pocos recursos. Pero un día, un profesor encendió unas computadoras Toshiba MSX. Y allí, por primera vez, vi una tortuguita dibujar líneas en la pantalla.</p>
+                        <p>No era magia. Era código. Y fue el primer momento en que entendí: podía crear mundos con solo una idea.</p>
+                        <p>Luego llegó la Commodore 16. No era la Commodore 64, la que tenía cientos de juegos, pero tenía un manual. Y yo una mente curiosa.</p>
+                        <p>Así empecé a programar solo. Sin tutor. Sin cursos. Solo con errores, paciencia y la ilusión de que algo podía nacer de mis dedos.</p>
+                        <p>Ese fue mi primer gran descubrimiento: no se trata de tener el mejor equipo. Se trata de no rendirse.</p>
+                        <p>Luego vino la carrera, el trabajo, años en sistemas… todo muy lindo, pero vacío.</p>
+                        <p>Hasta que mi hijo empezó a estudiar desarrollo de videojuegos. Y en ese momento, algo dentro mío se despertó.</p>
+                        <p>Me di cuenta que yo también tenía un sueño pendiente.</p>
+                        <p>Así que volví a escribir juegos. Gané una jam con Las decisiones de Ana, un juego sobre el embarazo adolescente.</p>
+                        <p>Y luego, algo inesperado: me di cuenta de que me encantaba enseñar.</p>
+                        <p>Hoy, sigo aprendiendo, creando y compartiendo.</p>
+                        <p>Porque sé cómo se siente empezar desde cero.</p>
+                        <p>Si estás pensando en crear tu primer juego… No necesitás ser un experto. Solo necesitás empezar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- FINAL CALL TO ACTION SECTION -->
+        <section id="agendar" class="final-cta-section py-5 bg-body-tertiary">
+            <div class="container text-center">
+                <h2 class="section-title">¿Estás listo para empezar a crear?</h2>
+                <p class="section-subtitle lead mb-4">Hablemos de tu idea, de tus metas y de cómo puedo ayudarte a hacerlas realidad.</p>
+                 <a href="https://api.whatsapp.com/send?phone=5491123976974&text=%C2%A1Hola%21%20Quiero%20agendar%20una%20llamada%20por%20WhatsApp%20para%20conocer%20tus%20servicios%20de%20mentor%C3%ADa." class="cta-button my-3 d-inline-block">¡Quiero más info por WhatsApp!</a>
+                <p class="small-text mt-3 text-muted">Es el primer paso de tu mentoría.</p>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="section-title text-violet-glow mb-4 text-center">¿Qué opinan los alumnos?</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <p class="card-text mb-3">Me encantó el curso de pixel art. Me relaja crear personajes y animarlos</p>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person-circle me-2 text-muted"></i>
+                                            <strong class="text">Sofía</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <p class="card-text mb-3">Ahora entiendo qué es el delta time!</p>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person-circle me-2 text-muted"></i>
+                                            <strong class="text">Tomás</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <p class="card-text mb-3">GDScript es fácil sabiendo algo de Python</p>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person-circle me-2 text-muted"></i>
+                                            <strong class="text">Matías</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <p class="card-text mb-3">Me encanta cómo explicas los conceptos. Todo es claro y práctico.</p>
+                                        <div class="d-flex align-items-center">
+                                            <i class="bi bi-person-circle me-2 text-muted"></i>
+                                            <strong class="text">Verónica</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SOCIAL MEDIA SECTION -->
+        <section class="social-section text-center">
+            <div class="container">
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="https://www.youtube.com/@gamedevargentina" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="https://wa.me/5491123976974" class="social-icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/gamedevargentina/" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@gamedevargentina" class="social-icon" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://t.me/Gamedevargentina" class="social-icon" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer py-4 text-center">
+        <div class="container">
+            <p class="mb-0">© 2025 Gamedev Argentina. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Mi Script Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
