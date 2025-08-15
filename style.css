@@ -267,11 +267,11 @@ h1, h2, h3, h4, h5, h6, .btn, .navbar-brand {
 }
 
 .final-cta-section .section-subtitle {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1.0);
 }
 
 .final-cta-section .small-text {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(255, 255, 255, 1.0) !important;
 }
 
 /* Estilos para la sección personal-story con fondo plano oscuro */
