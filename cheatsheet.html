@@ -478,18 +478,6 @@ if Input.is_action_just_released("ui_down"):
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <!-- Print button script -->
-    <script>
-        // Add print button functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const printButton = document.createElement('button');
-            printButton.innerHTML = '<i class="bi bi-printer"></i> Imprimir Cheatsheet';
-            printButton.className = 'btn btn-outline-secondary position-fixed';
-            printButton.style.cssText = 'bottom: 20px; right: 20px; z-index: 1000;';
-            printButton.onclick = () => window.print();
-            document.body.appendChild(printButton);
-        });
-    </script>
+
 </body>
 </html>
